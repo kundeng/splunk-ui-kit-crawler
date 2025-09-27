@@ -43,7 +43,7 @@ async def default_handler(context: PlaywrightCrawlingContext) -> None:
         logger.info('Main content found, waiting for network idle...')
         await context.page.wait_for_load_state('networkidle', timeout=15_000)
         logger.info('Network idle achieved, waiting additional time for JavaScript...')
-        await context.page.wait_for_timeout(3000)  # Extra time for JS to initialize
+        await context.page.wait_for_timeout(1000)  # Reduced from 3000ms
     except Exception as e:
         logger.warning(f'Timeout waiting for content on {context.request.url}: {e}')
         # Try to continue anyway
@@ -228,8 +228,8 @@ async def component_handler(context: PlaywrightCrawlingContext) -> None:
         except Exception as e:
             logger.warning(f'Main content selector timeout: {e}')
         
-        # Give extra time for interactive examples to render
-        await context.page.wait_for_timeout(3000)
+        # Give minimal time for interactive examples to render
+        await context.page.wait_for_timeout(500)  # Reduced from 3000ms
         
         # Check if tabs are available and log them
         try:

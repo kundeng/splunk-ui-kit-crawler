@@ -51,7 +51,7 @@ async def switch_to_tab(context: PlaywrightCrawlingContext, tab_name: str) -> bo
         if target_tab:
             await target_tab.click()
             logger.info(f'Successfully clicked tab: {tab_name}')
-            await context.page.wait_for_timeout(500)  # Reduced from 1000ms
+            await context.page.wait_for_timeout(100)  # Reduced from 300ms
             return True
         else:
             logger.warning(f'Tab not found: {tab_name}')
@@ -64,7 +64,7 @@ async def switch_to_tab(context: PlaywrightCrawlingContext, tab_name: str) -> bo
 
 
 async def click_show_code_buttons(context: PlaywrightCrawlingContext, tab_name: str) -> List[str]:
-    """Click 'Show code' buttons using the EXACT WORKING approach - don't change what works!"""
+    """Click 'Show code' buttons - OPTIMIZED: click all first, then wait once."""
     if not any(k in tab_name.lower() for k in ['examples', 'example', 'demo', 'usage']):
         return []
     
@@ -73,32 +73,39 @@ async def click_show_code_buttons(context: PlaywrightCrawlingContext, tab_name: 
     try:
         logger.info(f'Looking for "Show code" buttons in tab: {tab_name}')
         
-        # THE EXACT WORKING APPROACH: Find figures and click their "Show code" labels
-        # This was working perfectly for Table (18 blocks) and Modal (4 blocks)
+        # OPTIMIZED APPROACH: Click all buttons first, then wait once
         figures = await context.page.locator('figure').all()
-        clicked_count = 0
+        buttons_to_click = []
         
+        # First pass: collect all "Show code" buttons
         for figure in figures:
             try:
-                # Use the EXACT working method: figure.get_by_label('Show code')
                 show_code_btn = figure.get_by_label('Show code')
                 if await show_code_btn.count() > 0:
-                    await show_code_btn.click()
-                    clicked_count += 1
-                    logger.info(f'Clicked "Show code" button {clicked_count} using EXACT working method')
-            except Exception as e:
-                # Not all figures will have show code buttons, that's fine
+                    buttons_to_click.append(show_code_btn)
+            except Exception:
                 continue
         
-        logger.info(f'Clicked {clicked_count} "Show code" buttons using the EXACT working method')
+        # Second pass: click all buttons rapidly
+        clicked_count = 0
+        for button in buttons_to_click:
+            try:
+                await button.click()
+                clicked_count += 1
+            except Exception as e:
+                logger.warning(f'Failed to click button: {e}')
+                continue
         
-        # Use the EXACT working wait time
-        await context.page.wait_for_timeout(2000)
+        logger.info(f'Clicked {clicked_count} "Show code" buttons, waiting for all code to load...')
         
-        # Extract code using BeautifulSoup - the EXACT PROVEN approach that worked!
+        # Single wait for all code to appear - MUCH faster than waiting after each click
+        if clicked_count > 0:
+            await context.page.wait_for_timeout(800)  # Reduced from 1500ms
+        
+        # Extract code using BeautifulSoup - the PROVEN approach
         html = await context.page.content()
         soup = BeautifulSoup(html, 'html.parser')
-        pre_elements = soup.find_all('pre')  # This was working perfectly!
+        pre_elements = soup.find_all('pre')
         
         logger.info(f'BeautifulSoup found {len(pre_elements)} pre elements after clicking buttons')
         
@@ -119,8 +126,8 @@ async def click_show_code_buttons(context: PlaywrightCrawlingContext, tab_name: 
 async def extract_tab_content(context: PlaywrightCrawlingContext, tab_name: str) -> str:
     """Extract tab-specific content using targeted selectors."""
     try:
-        # Minimal wait for content to load
-        await context.page.wait_for_timeout(200)  # Reduced from 500ms
+        # No wait needed - content should be immediately available
+        # await context.page.wait_for_timeout(200)  # Removed artificial wait
         
         # For API tab, look for props tables specifically
         if 'api' in tab_name.lower():

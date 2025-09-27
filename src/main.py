@@ -34,8 +34,8 @@ async def main() -> None:
     
     # Configure the Playwright crawler
     crawler = PlaywrightCrawler(
-        # Test multiple pages with generic approach
-        max_requests_per_crawl=5,
+        # Let auto-discovery crawl the whole site naturally
+        max_requests_per_crawl=1,  # Test speed on single page first
         
         # Back to headless mode for production
         headless=True,
@@ -59,13 +59,9 @@ async def main() -> None:
         }
     )
     
-    # Add seed URLs - test different component pages
+    # Test speed on Table page (18 code blocks)
     seed_urls = [
-        'https://splunkui.splunk.com/Packages/react-ui/Button',
-        'https://splunkui.splunk.com/Packages/react-ui/Card', 
         'https://splunkui.splunk.com/Packages/react-ui/Table',
-        'https://splunkui.splunk.com/Packages/react-ui/Modal',
-        'https://splunkui.splunk.com/Packages/react-ui/Switch',
     ]
     
     logger.info(f"Starting crawl with {len(seed_urls)} seed URLs")
