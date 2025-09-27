@@ -1,0 +1,63 @@
+{
+  "title": "@splunk/react-ui - 5.3.0",
+  "url": "https://splunkui.splunk.com/Packages/react-ui/Color?section=examples",
+  "type": "package_section",
+  "package": "react-ui",
+  "section": "Color",
+  "component": null,
+  "content": "Color\n\nAn input for selecting a color.\n\nOverview\nExamples\nAPI\nTest Hooks\nColor API\nProps\nappend\n\nAppend removes border from the right side.\n\nPropType:\tbool\nRequired:\tno\ndefaultValue\n\nSet this property instead of value to make value uncontrolled.\n\nPropType:\tstring\nRequired:\tno\ndescribedBy\n\nThe id of the description. When placed in a ControlGroup, this is automatically set to the ControlGroup's help component.\n\nPropType:\tstring\nRequired:\tno\ndisabled\n\nAdd a disabled attribute and prevent clicking.\n\nPropType:\tbool\nRequired:\tno\nelementRef\n\nA React ref which is set to the DOM element when the component mounts and null when it unmounts.\n\nPropType:\toneOfType(func, object)\nRequired:\tno\nerror\n\nAdd an error attribute.\n\nPropType:\tbool\nRequired:\tno\nhideInput\n\nSet this property to hide the hex value text input in the initial appearance. The input will still appear inside the dropdown when opened.\n\nPropType:\tbool\nRequired:\tno\nlabelledBy\n\nThe id of the label. When placed in a ControlGroup, this is automatically set to the ControlGroup's label.\n\nPropType:\tstring\nRequired:\tno\nname\n\nThe name is returned with onChange events, which can be used to identify the control when multiple controls share an onChange callback.\n\nPropType:\tstring\nRequired:\tno\nonChange\n\nA callback that receives the value of a newly selected color.\n\nPropType:\tfunc\nRequired:\tno\npalette\n\nAn array of optional color swatch values (hexadecimal or 'transparent'). The 'transparent' option should only be put at the start or end of the palette.\n\nPropType:\tarray\nDefault:\tdefaultPalette\nRequired:\tno\nprepend\n\nThis has no effect on the appearance at this time but is recommended to be used when a control is joined to the left. Styles may change in the future.\n\nPropType:\tbool\nRequired:\tno\nvalue\n\nThe value of the color (hexadecimal or 'transparent'). Setting this value makes the property controlled. An onChange callback is required.\n\nPropType:\tstring\nRequired:\tno",
+  "code_blocks": [
+    {
+      "language": "jsx",
+      "code": "import React from 'react';\n\nimport Color from '@splunk/react-ui/Color';\n\nfunction Uncontrolled() {\n    return <Color defaultValue=\"#F29BAC\" />;\n}\n\nexport default Uncontrolled;"
+    },
+    {
+      "language": "jsx",
+      "code": "import React, { useState } from 'react';\n\nimport Color from '@splunk/react-ui/Color';\n\nfunction Controlled() {\n    const [colorValue, setColorValue] = useState('#000000');\n\n    const handleChange = ({ value }) => {\n        setColorValue(value);\n    };\n\n    return <Color value={colorValue} onChange={handleChange} />;\n}\n\nexport default Controlled;"
+    },
+    {
+      "language": "jsx",
+      "code": "import React from 'react';\n\nimport Color, { defaultPalette } from '@splunk/react-ui/Color';\nimport useSplunkTheme from '@splunk/themes/useSplunkTheme';\n\nexport default function ThemeVariables() {\n    const { syntaxTeal } = useSplunkTheme();\n\n    const palette = [...defaultPalette, syntaxTeal];\n\n    return (\n        <div style={{ width: 170 }}>\n            <Color defaultValue={syntaxTeal} palette={palette} />\n        </div>\n    );\n}"
+    },
+    {
+      "language": "jsx",
+      "code": "import React, { useState } from 'react';\n\nimport Color from '@splunk/react-ui/Color';\n\nfunction Null() {\n    const [colorValue, setColorValue] = useState(null);\n\n    const handleChange = ({ value }) => {\n        setColorValue(value);\n    };\n\n    return <Color value={colorValue} onChange={handleChange} />;\n}\n\nexport default Null;"
+    },
+    {
+      "language": "jsx",
+      "code": "import React from 'react';\n\nimport Color, { defaultPalette } from '@splunk/react-ui/Color';\n\nexport default function CustomizedPalette() {\n    const customSwatches = [\n        '#53a051',\n        '#62b3b2',\n        '#4fa484',\n        '#f8be44',\n        '#5a4575',\n        '#708794',\n        '#294e70',\n        '#b6c75a',\n    ];\n\n    const myPalette = [...customSwatches, ...defaultPalette];\n\n    return <Color defaultValue=\"#4fa484\" palette={myPalette} />;\n}"
+    },
+    {
+      "language": "jsx",
+      "code": "import React from 'react';\n\nimport Color from '@splunk/react-ui/Color';\n\nfunction HideInput() {\n    return <Color hideInput defaultValue=\"#912344\" />;\n}\n\nexport default HideInput;"
+    }
+  ],
+  "props": [],
+  "exploration": {
+    "available_tabs": [
+      "Overview",
+      "Examples",
+      "API",
+      "Test Hooks"
+    ],
+    "tabs_clicked": [
+      "Examples",
+      "API"
+    ],
+    "toggles_clicked": [
+      "Show code",
+      "Open CodeSandbox(Opens new window)",
+      "Show code",
+      "Show code",
+      "Open CodeSandbox(Opens new window)",
+      "Open CodeSandbox(Opens new window)",
+      "Show code",
+      "Open CodeSandbox(Opens new window)",
+      "Show code",
+      "Open CodeSandbox(Opens new window)",
+      "Show code",
+      "Open CodeSandbox(Opens new window)"
+    ]
+  },
+  "crawled_at": "2025-09-26T13:13:02.940589"
+}

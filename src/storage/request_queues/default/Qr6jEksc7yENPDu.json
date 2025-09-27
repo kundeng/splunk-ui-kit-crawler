@@ -1,0 +1,24 @@
+{
+  "id": "Qr6jEksc7yENPDu",
+  "unique_key": "https://splunkui.splunk.com/packages/dashboard-docs/introduction",
+  "order_no": null,
+  "handled_at": "2025-09-26 17:23:01.091625+00:00",
+  "request": {
+    "url": "https://splunkui.splunk.com/Packages/dashboard-docs/Introduction",
+    "method": "GET",
+    "headers": {},
+    "payload": null,
+    "user_data": {
+      "__crawlee": {
+        "state": 5,
+        "crawlDepth": 2
+      }
+    },
+    "retry_count": 3,
+    "no_retry": false,
+    "loaded_url": "https://splunkui.splunk.com/Packages/dashboard-docs/Introduction",
+    "handled_at": "2025-09-26 17:23:01.091625+00:00",
+    "unique_key": "https://splunkui.splunk.com/packages/dashboard-docs/introduction",
+    "id": "Qr6jEksc7yENPDu"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "bLDAltttdv7g2ep",
+  "unique_key": "https://splunkui.splunk.com/packages/splunk-utils/fetch",
+  "order_no": null,
+  "handled_at": "2025-09-26 17:24:19.993501+00:00",
+  "request": {
+    "url": "https://splunkui.splunk.com/Packages/splunk-utils/Fetch",
+    "method": "GET",
+    "headers": {},
+    "payload": null,
+    "user_data": {
+      "__crawlee": {
+        "state": 5,
+        "crawlDepth": 2
+      }
+    },
+    "retry_count": 3,
+    "no_retry": false,
+    "loaded_url": "https://splunkui.splunk.com/Packages/splunk-utils/Fetch",
+    "handled_at": "2025-09-26 17:24:19.993501+00:00",
+    "unique_key": "https://splunkui.splunk.com/packages/splunk-utils/fetch",
+    "id": "bLDAltttdv7g2ep"
+  }
+}

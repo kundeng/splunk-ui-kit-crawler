@@ -1,0 +1,24 @@
+{
+  "id": "bHNrX6dZiDbCAJF",
+  "unique_key": "https://splunkui.splunk.com/packages/visualizations/image",
+  "order_no": null,
+  "handled_at": "2025-09-26 17:23:31.814555+00:00",
+  "request": {
+    "url": "https://splunkui.splunk.com/Packages/visualizations/Image",
+    "method": "GET",
+    "headers": {},
+    "payload": null,
+    "user_data": {
+      "__crawlee": {
+        "state": 5,
+        "crawlDepth": 2
+      }
+    },
+    "retry_count": 3,
+    "no_retry": false,
+    "loaded_url": "https://splunkui.splunk.com/Packages/visualizations/Image",
+    "handled_at": "2025-09-26 17:23:31.814555+00:00",
+    "unique_key": "https://splunkui.splunk.com/packages/visualizations/image",
+    "id": "bHNrX6dZiDbCAJF"
+  }
+}

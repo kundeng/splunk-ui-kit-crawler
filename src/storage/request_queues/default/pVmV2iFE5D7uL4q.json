@@ -1,0 +1,24 @@
+{
+  "id": "pVmV2iFE5D7uL4q",
+  "unique_key": "https://splunkui.splunk.com/packages/react-ui/staticcontent?section=develop",
+  "order_no": null,
+  "handled_at": "2025-09-26 17:31:01.935218+00:00",
+  "request": {
+    "url": "https://splunkui.splunk.com/Packages/react-ui/StaticContent?section=develop",
+    "method": "GET",
+    "headers": {},
+    "payload": null,
+    "user_data": {
+      "__crawlee": {
+        "state": 3,
+        "crawlDepth": 3
+      }
+    },
+    "retry_count": 1,
+    "no_retry": false,
+    "loaded_url": "https://splunkui.splunk.com/Packages/react-ui/StaticContent?section=develop",
+    "handled_at": "2025-09-26 17:31:01.935218+00:00",
+    "unique_key": "https://splunkui.splunk.com/packages/react-ui/staticcontent?section=develop",
+    "id": "pVmV2iFE5D7uL4q"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "eIR5IqrzkwAhyEE",
+  "unique_key": "https://splunkui.splunk.com/packages/eslint-config/licenses",
+  "order_no": null,
+  "handled_at": "2025-09-26 17:24:36.249300+00:00",
+  "request": {
+    "url": "https://splunkui.splunk.com/Packages/eslint-config/Licenses",
+    "method": "GET",
+    "headers": {},
+    "payload": null,
+    "user_data": {
+      "__crawlee": {
+        "state": 5,
+        "crawlDepth": 2
+      }
+    },
+    "retry_count": 3,
+    "no_retry": false,
+    "loaded_url": "https://splunkui.splunk.com/Packages/eslint-config/Licenses",
+    "handled_at": "2025-09-26 17:24:36.249300+00:00",
+    "unique_key": "https://splunkui.splunk.com/packages/eslint-config/licenses",
+    "id": "eIR5IqrzkwAhyEE"
+  }
+}

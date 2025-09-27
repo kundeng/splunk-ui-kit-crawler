@@ -1,0 +1,24 @@
+{
+  "id": "mUvTX57PRDZndqK",
+  "unique_key": "https://splunkui.splunk.com/packages/react-icons/icons",
+  "order_no": null,
+  "handled_at": "2025-09-26 17:19:52.886579+00:00",
+  "request": {
+    "url": "https://splunkui.splunk.com/Packages/react-icons/icons",
+    "method": "GET",
+    "headers": {},
+    "payload": null,
+    "user_data": {
+      "__crawlee": {
+        "state": 5,
+        "crawlDepth": 1
+      }
+    },
+    "retry_count": 3,
+    "no_retry": false,
+    "loaded_url": "https://splunkui.splunk.com/Packages/react-icons/icons",
+    "handled_at": "2025-09-26 17:19:52.886579+00:00",
+    "unique_key": "https://splunkui.splunk.com/packages/react-icons/icons",
+    "id": "mUvTX57PRDZndqK"
+  }
+}

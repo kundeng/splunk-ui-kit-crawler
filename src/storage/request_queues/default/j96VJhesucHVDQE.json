@@ -1,0 +1,24 @@
+{
+  "id": "j96VJhesucHVDQE",
+  "unique_key": "https://splunkui.splunk.com/packages/visualizations/rectangle",
+  "order_no": null,
+  "handled_at": "2025-09-26 17:23:35.160852+00:00",
+  "request": {
+    "url": "https://splunkui.splunk.com/Packages/visualizations/Rectangle",
+    "method": "GET",
+    "headers": {},
+    "payload": null,
+    "user_data": {
+      "__crawlee": {
+        "state": 5,
+        "crawlDepth": 2
+      }
+    },
+    "retry_count": 3,
+    "no_retry": false,
+    "loaded_url": "https://splunkui.splunk.com/Packages/visualizations/Rectangle",
+    "handled_at": "2025-09-26 17:23:35.160852+00:00",
+    "unique_key": "https://splunkui.splunk.com/packages/visualizations/rectangle",
+    "id": "j96VJhesucHVDQE"
+  }
+}

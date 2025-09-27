@@ -1,0 +1,12 @@
+[project]
+name = "crawlee-splunkui"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.10"
+dependencies = [
+    "crawlee[all]>=0.6.12",
+    "html-to-markdown[lxml]>=1.15.0",
+    "html2text>=2025.4.15",
+    "markdownify>=1.2.0",
+    "playwright>=1.55.0",
+]

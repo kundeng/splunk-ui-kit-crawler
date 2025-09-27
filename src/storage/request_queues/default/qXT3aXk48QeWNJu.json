@@ -1,0 +1,24 @@
+{
+  "id": "qXT3aXk48QeWNJu",
+  "unique_key": "https://splunkui.splunk.com/packages/visualizations/dataseriesgetfield",
+  "order_no": null,
+  "handled_at": "2025-09-26 17:23:45.451681+00:00",
+  "request": {
+    "url": "https://splunkui.splunk.com/Packages/visualizations/DataSeriesgetField",
+    "method": "GET",
+    "headers": {},
+    "payload": null,
+    "user_data": {
+      "__crawlee": {
+        "state": 5,
+        "crawlDepth": 2
+      }
+    },
+    "retry_count": 3,
+    "no_retry": false,
+    "loaded_url": "https://splunkui.splunk.com/Packages/visualizations/DataSeriesgetField",
+    "handled_at": "2025-09-26 17:23:45.451681+00:00",
+    "unique_key": "https://splunkui.splunk.com/packages/visualizations/dataseriesgetfield",
+    "id": "qXT3aXk48QeWNJu"
+  }
+}

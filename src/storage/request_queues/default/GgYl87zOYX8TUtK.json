@@ -1,0 +1,24 @@
+{
+  "id": "GgYl87zOYX8TUtK",
+  "unique_key": "https://splunkui.splunk.com/blueprints/crud/create",
+  "order_no": null,
+  "handled_at": "2025-09-26 17:12:28.827420+00:00",
+  "request": {
+    "url": "https://splunkui.splunk.com/Blueprints/CRUD/Create",
+    "method": "GET",
+    "headers": {},
+    "payload": null,
+    "user_data": {
+      "__crawlee": {
+        "state": 3,
+        "crawlDepth": 2
+      }
+    },
+    "retry_count": 0,
+    "no_retry": false,
+    "loaded_url": "https://splunkui.splunk.com/Blueprints/CRUD/Create",
+    "handled_at": "2025-09-26 17:12:28.827420+00:00",
+    "unique_key": "https://splunkui.splunk.com/blueprints/crud/create",
+    "id": "GgYl87zOYX8TUtK"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "G1jwnc9OLVqRNBP",
+  "unique_key": "https://splunkui.splunk.com/packages/react-ui/resize",
+  "order_no": null,
+  "handled_at": "2025-09-26 17:22:57.209693+00:00",
+  "request": {
+    "url": "https://splunkui.splunk.com/Packages/react-ui/Resize",
+    "method": "GET",
+    "headers": {},
+    "payload": null,
+    "user_data": {
+      "__crawlee": {
+        "state": 5,
+        "crawlDepth": 2
+      }
+    },
+    "retry_count": 3,
+    "no_retry": false,
+    "loaded_url": "https://splunkui.splunk.com/Packages/react-ui/Resize",
+    "handled_at": "2025-09-26 17:22:57.209693+00:00",
+    "unique_key": "https://splunkui.splunk.com/packages/react-ui/resize",
+    "id": "G1jwnc9OLVqRNBP"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "title": "@splunk/react-visualization-utils - 2.0.0",
+  "url": "https://splunkui.splunk.com/Packages/react-visualization-utils/Overview",
+  "type": "package_section",
+  "package": "react-visualization-utils",
+  "section": "Overview",
+  "component": null,
+  "content": "React Visualization Utils\n\nUtilities for fetching, parsing, evaluating and manipulating visualization props.\n\nThe library comes with typescript declaration file which will provide documentation inline in development environments.\n\nInstall\nnpm install @splunk/react-visualization-utils\n\n\nOr\n\nyarn add @splunk/react-visualization-utils\n",
+  "code_blocks": [
+    {
+      "language": "javascript",
+      "code": "npm install @splunk/react-visualization-utils\n"
+    },
+    {
+      "language": "javascript",
+      "code": "yarn add @splunk/react-visualization-utils\n"
+    }
+  ],
+  "props": [],
+  "exploration": {
+    "available_tabs": [],
+    "tabs_clicked": [],
+    "toggles_clicked": []
+  },
+  "crawled_at": "2025-09-26T13:37:00.614659"
+}

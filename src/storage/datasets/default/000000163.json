@@ -1,0 +1,41 @@
+{
+  "title": "@splunk/react-ui - 5.3.0",
+  "url": "https://splunkui.splunk.com/Packages/react-ui/Checkbox?section=test",
+  "type": "package_section",
+  "package": "react-ui",
+  "section": "Checkbox",
+  "component": null,
+  "content": "Checkbox\n\nAn input to select one or more boolean value options from a list.\n\nOverview\nExamples\nAPI\nTest Hooks\nCheckbox API\nProps\nchecked\n\nSetting this value makes the component controlled. If set, the onChange callback is required. A setting of \"indeterminate\" is considered unchecked for the purposes of form submission.\n\nPropType:\toneOf(true, false, 'indeterminate')\nRequired:\tno\nchildren\n\nThe content to display inside the checkbox label.\n\nPropType:\tnode\nRequired:\tno\ndefaultChecked\n\nSet this property instead of checked to make the component uncontrolled.\n\nPropType:\tbool\nRequired:\tno\ndescribedBy\n\nThe id of the description. When placed in a ControlGroup, this is automatically set to the ControlGroup's help component.\n\nPropType:\tstring\nRequired:\tno\ndisabled\nPropType:\tbool\nRequired:\tno\nelementRef\n\nA React ref which is set to the DOM element when the component mounts, and null when it unmounts.\n\nPropType:\toneOfType(func, object)\nRequired:\tno\nerror\n\nMark the component as having an error.\n\nPropType:\tbool\nRequired:\tno\ninert\nPropType:\tbool\nRequired:\tno\ninputRef\n\nA React ref which is set to the input element when the component mounts and null when it unmounts.\n\nPropType:\toneOfType(func, object)\nRequired:\tno\nlabelledBy\n\nThe id of the label. When placed in a ControlGroup, this is automatically set to the ControlGroup's label.\n\nPropType:\tstring\nRequired:\tno\nname\n\nThe name is returned with onChange events, which can be used to identify the control when multiple controls share an onChange callback.\n\nPropType:\tstring\nRequired:\tno\nonChange\n\nFires when the checked state changes.\n\nPropType:\tfunc\nRequired:\tno\nvalue\n\nReturned by the onChange handler and submitted during form submission if the checkbox is checked. This defaults to \"on\" if the input is checked.\n\nRequired:\tno",
+  "code_blocks": [
+    {
+      "language": "jsx",
+      "code": "import React, { useState } from 'react';\n\nimport Checkbox from '@splunk/react-ui/Checkbox';\n\nconst Basic = () => {\n    const [checkedTandC, setCheckedTandC] = useState(true);\n    const [checkedEmail, setCheckedEmail] = useState(false);\n\n    const handleEmailChange = (e, { checked: newChecked }) => {\n        setCheckedEmail(newChecked);\n    };\n\n    const handleTandCChange = (e, { checked: newChecked }) => {\n        setCheckedTandC(newChecked);\n    };\n\n    return (\n        <>\n            <Checkbox checked={checkedTandC} onChange={handleTandCChange}>\n                I accept the terms and conditions\n            </Checkbox>\n            <Checkbox checked={checkedEmail} onChange={handleEmailChange}>\n                Send me email updates\n            </Checkbox>\n        </>\n    );\n};\n\nexport default Basic;"
+    },
+    {
+      "language": "jsx",
+      "code": "import React from 'react';\n\nimport Checkbox from '@splunk/react-ui/Checkbox';\n\nconst Disabled = () => {\n    return <Checkbox disabled>This option is disabled</Checkbox>;\n};\n\nexport default Disabled;"
+    }
+  ],
+  "props": [],
+  "exploration": {
+    "available_tabs": [
+      "Overview",
+      "Examples",
+      "API",
+      "Test Hooks"
+    ],
+    "tabs_clicked": [
+      "Examples",
+      "API"
+    ],
+    "toggles_clicked": [
+      "Show code",
+      "Open CodeSandbox(Opens new window)",
+      "Open CodeSandbox(Opens new window)",
+      "Show code",
+      "Open CodeSandbox(Opens new window)",
+      "Open CodeSandbox(Opens new window)"
+    ]
+  },
+  "crawled_at": "2025-09-26T13:12:00.495407"
+}

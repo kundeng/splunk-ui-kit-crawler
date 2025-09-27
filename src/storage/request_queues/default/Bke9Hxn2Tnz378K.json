@@ -1,0 +1,24 @@
+{
+  "id": "Bke9Hxn2Tnz378K",
+  "unique_key": "https://splunkui.splunk.com/packages/react-ui/code?section=examples",
+  "order_no": null,
+  "handled_at": "2025-09-26 17:24:47.666882+00:00",
+  "request": {
+    "url": "https://splunkui.splunk.com/Packages/react-ui/Code?section=examples",
+    "method": "GET",
+    "headers": {},
+    "payload": null,
+    "user_data": {
+      "__crawlee": {
+        "state": 5,
+        "crawlDepth": 3
+      }
+    },
+    "retry_count": 3,
+    "no_retry": false,
+    "loaded_url": "https://splunkui.splunk.com/Packages/react-ui/Code?section=examples",
+    "handled_at": "2025-09-26 17:24:47.666882+00:00",
+    "unique_key": "https://splunkui.splunk.com/packages/react-ui/code?section=examples",
+    "id": "Bke9Hxn2Tnz378K"
+  }
+}

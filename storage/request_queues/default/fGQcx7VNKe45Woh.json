@@ -1,0 +1,23 @@
+{
+  "id": "fGQcx7VNKe45Woh",
+  "unique_key": "https://splunkui.splunk.com/packages/react-ui/combobox",
+  "order_no": "1758952197329.054000",
+  "handled_at": null,
+  "request": {
+    "url": "https://splunkui.splunk.com/Packages/react-ui/ComboBox",
+    "method": "GET",
+    "headers": {},
+    "payload": null,
+    "user_data": {
+      "__crawlee": {
+        "crawlDepth": 1
+      }
+    },
+    "retry_count": 0,
+    "no_retry": false,
+    "loaded_url": null,
+    "handled_at": null,
+    "unique_key": "https://splunkui.splunk.com/packages/react-ui/combobox",
+    "id": "fGQcx7VNKe45Woh"
+  }
+}

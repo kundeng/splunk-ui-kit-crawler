@@ -1,0 +1,24 @@
+{
+  "id": "n1IiIQ7jJXF4qNn",
+  "unique_key": "https://splunkui.splunk.com/packages/react-ui//packages/themes/slider",
+  "order_no": null,
+  "handled_at": "2025-09-26 18:11:19.074057+00:00",
+  "request": {
+    "url": "https://splunkui.splunk.com/Packages/react-ui//Packages/themes/Slider",
+    "method": "GET",
+    "headers": {},
+    "payload": null,
+    "user_data": {
+      "__crawlee": {
+        "state": 3,
+        "crawlDepth": 5
+      }
+    },
+    "retry_count": 0,
+    "no_retry": false,
+    "loaded_url": "https://splunkui.splunk.com/Packages/react-ui//Packages/themes/Slider",
+    "handled_at": "2025-09-26 18:11:19.074057+00:00",
+    "unique_key": "https://splunkui.splunk.com/packages/react-ui//packages/themes/slider",
+    "id": "n1IiIQ7jJXF4qNn"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "rR5VEGUK7Qj8h14",
+  "unique_key": "https://splunkui.splunk.com/packages/dashboard-extension-webpack-plugin",
+  "order_no": null,
+  "handled_at": "2025-09-26 17:12:01.051023+00:00",
+  "request": {
+    "url": "https://splunkui.splunk.com/Packages/dashboard-extension-webpack-plugin/",
+    "method": "GET",
+    "headers": {},
+    "payload": null,
+    "user_data": {
+      "__crawlee": {
+        "state": 3,
+        "crawlDepth": 1
+      }
+    },
+    "retry_count": 0,
+    "no_retry": false,
+    "loaded_url": "https://splunkui.splunk.com/Packages/dashboard-extension-webpack-plugin/Overview",
+    "handled_at": "2025-09-26 17:12:01.051023+00:00",
+    "unique_key": "https://splunkui.splunk.com/packages/dashboard-extension-webpack-plugin",
+    "id": "rR5VEGUK7Qj8h14"
+  }
+}

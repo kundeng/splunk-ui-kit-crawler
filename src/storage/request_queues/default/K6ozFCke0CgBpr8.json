@@ -1,0 +1,24 @@
+{
+  "id": "K6ozFCke0CgBpr8",
+  "unique_key": "https://splunkui.splunk.com/packages/stylelint-config/overview",
+  "order_no": null,
+  "handled_at": "2025-09-26 17:24:37.473094+00:00",
+  "request": {
+    "url": "https://splunkui.splunk.com/Packages/stylelint-config/Overview#splunkstylelint-config",
+    "method": "GET",
+    "headers": {},
+    "payload": null,
+    "user_data": {
+      "__crawlee": {
+        "state": 5,
+        "crawlDepth": 2
+      }
+    },
+    "retry_count": 3,
+    "no_retry": false,
+    "loaded_url": "https://splunkui.splunk.com/Packages/stylelint-config/Overview#splunkstylelint-config",
+    "handled_at": "2025-09-26 17:24:37.473094+00:00",
+    "unique_key": "https://splunkui.splunk.com/packages/stylelint-config/overview",
+    "id": "K6ozFCke0CgBpr8"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "dawKCy5J8dpAAcb",
+  "unique_key": "https://splunkui.splunk.com/packages/react-ui//packages/themes/search",
+  "order_no": null,
+  "handled_at": "2025-09-26 18:10:18.594927+00:00",
+  "request": {
+    "url": "https://splunkui.splunk.com/Packages/react-ui//Packages/themes/Search",
+    "method": "GET",
+    "headers": {},
+    "payload": null,
+    "user_data": {
+      "__crawlee": {
+        "state": 3,
+        "crawlDepth": 5
+      }
+    },
+    "retry_count": 0,
+    "no_retry": false,
+    "loaded_url": "https://splunkui.splunk.com/Packages/react-ui//Packages/themes/Search",
+    "handled_at": "2025-09-26 18:10:18.594927+00:00",
+    "unique_key": "https://splunkui.splunk.com/packages/react-ui//packages/themes/search",
+    "id": "dawKCy5J8dpAAcb"
+  }
+}

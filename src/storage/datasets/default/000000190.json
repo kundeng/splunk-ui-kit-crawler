@@ -1,0 +1,37 @@
+{
+  "title": "@splunk/react-ui - 5.3.0",
+  "url": "https://splunkui.splunk.com/Packages/react-ui/StaticContent?section=test",
+  "type": "package_section",
+  "package": "react-ui",
+  "section": "StaticContent",
+  "component": null,
+  "content": "Static Content\n\nDisplays static content, such as text or icons, aligned to a Control Group label or other controls.\n\nExamples\nAPI\nTest Hooks\nStaticContent API\n\nThis component is intended for use in a control group, either to display a static value or between two controls.\n\nProps\nchildren\nPropType:\tnode\nRequired:\tno\nelementRef\n\nA React ref which is set to the DOM element when the component mounts, and null when it unmounts.\n\nPropType:\toneOfType(func, object)\nRequired:\tno\ninline\n\nWhen true, display as inline-block with auto width.\n\nPropType:\tbool\nDefault:\tfalse\nRequired:\tno\nlabelledBy\nPropType:\tstring\nRequired:\tno",
+  "code_blocks": [
+    {
+      "language": "jsx",
+      "code": "import React from 'react';\n\nimport ControlGroup from '@splunk/react-ui/ControlGroup';\nimport StaticContent from '@splunk/react-ui/StaticContent';\n\nfunction Basic() {\n    return (\n        <ControlGroup label=\"StaticContent\" controlsLayout=\"fill\">\n            <StaticContent> This simply renders the child text! </StaticContent>\n        </ControlGroup>\n    );\n}\n\nexport default Basic;"
+    },
+    {
+      "language": "jsx",
+      "code": "import React from 'react';\n\nimport CylinderMulti from '@splunk/react-icons/CylinderMulti';\nimport File from '@splunk/react-icons/File';\nimport ControlGroup from '@splunk/react-ui/ControlGroup';\nimport StaticContent from '@splunk/react-ui/StaticContent';\nimport Text from '@splunk/react-ui/Text';\n\nfunction FieldValue() {\n    return (\n        <div>\n            <ControlGroup label=\"Product\">\n                <StaticContent inline>\n                    <File />\n                </StaticContent>\n                <StaticContent inline>\n                    <CylinderMulti />\n                </StaticContent>\n            </ControlGroup>\n\n            <ControlGroup label=\"Cost\" controlsLayout=\"none\">\n                <Text defaultValue=\"20\" inline />\n                <StaticContent inline>Dollars or less</StaticContent>\n            </ControlGroup>\n        </div>\n    );\n}\n\nexport default FieldValue;"
+    }
+  ],
+  "props": [],
+  "exploration": {
+    "available_tabs": [
+      "Examples",
+      "API",
+      "Test Hooks"
+    ],
+    "tabs_clicked": [
+      "Examples",
+      "API"
+    ],
+    "toggles_clicked": [
+      "Show code",
+      "Open CodeSandbox(Opens new window)",
+      "Open CodeSandbox(Opens new window)"
+    ]
+  },
+  "crawled_at": "2025-09-26T13:32:00.834435"
+}

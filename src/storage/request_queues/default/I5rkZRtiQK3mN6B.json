@@ -1,0 +1,24 @@
+{
+  "id": "I5rkZRtiQK3mN6B",
+  "unique_key": "https://splunkui.splunk.com/examplesgallery",
+  "order_no": null,
+  "handled_at": "2025-09-26 17:12:24.619443+00:00",
+  "request": {
+    "url": "https://splunkui.splunk.com/ExamplesGallery",
+    "method": "GET",
+    "headers": {},
+    "payload": null,
+    "user_data": {
+      "__crawlee": {
+        "state": 3,
+        "crawlDepth": 1
+      }
+    },
+    "retry_count": 0,
+    "no_retry": false,
+    "loaded_url": "https://splunkui.splunk.com/ExamplesGallery",
+    "handled_at": "2025-09-26 17:12:24.619443+00:00",
+    "unique_key": "https://splunkui.splunk.com/examplesgallery",
+    "id": "I5rkZRtiQK3mN6B"
+  }
+}
