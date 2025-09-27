@@ -166,3 +166,7 @@ src/storage/
 # Debug files
 debug_*.py
 /tmp/debug_*
+
+# IDE and personal workspace files
+.memory/
+.windsurf/
