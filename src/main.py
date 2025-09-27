@@ -35,19 +35,15 @@ async def main() -> None:
     # Configure the Playwright crawler
     crawler = PlaywrightCrawler(
         # Let auto-discovery crawl the whole site naturally
-        max_requests_per_crawl=1,  # Test speed on single page first
+        max_requests_per_crawl=500,  # Get everything!
         
         # Back to headless mode for production
         headless=True,
         
-        # Use Chromium for best compatibility with modern SPAs (consistent with manual testing)
         browser_type='chromium',
         
         # Use our custom router for handling different page types
         request_handler=router,
-        
-        # Cap concurrency to 1 to normalize memory usage
-        concurrency_settings=ConcurrencySettings(max_concurrency=1),
         
         # Add some delay between requests to be respectful
         max_request_retries=3,
@@ -56,12 +52,15 @@ async def main() -> None:
         # Small viewport to save memory
         browser_new_context_options={
             "viewport": {"width": 1024, "height": 768}
-        }
+        },
+        
+        # ENABLE AUTO-DISCOVERY: Follow links automatically
+        # max_requests_per_minute=30,  # Be respectful - wrong parameter
     )
     
-    # Test speed on Table page (18 code blocks)
+    # Single root seed - let auto-discovery find everything
     seed_urls = [
-        'https://splunkui.splunk.com/Packages/react-ui/Table',
+        'https://splunkui.splunk.com/home',
     ]
     
     logger.info(f"Starting crawl with {len(seed_urls)} seed URLs")

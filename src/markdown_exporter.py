@@ -58,6 +58,12 @@ class MarkdownExporter:
                 return f'{self._sanitize_filename(package)}-{self._sanitize_filename(component)}-{self._sanitize_filename(section)}.md'
             else:
                 return f'{self._sanitize_filename(package)}-{self._sanitize_filename(component)}.md'
+        elif page_type == 'package_docs' and package and component:
+            # Handle package documentation sections like create/DevTools, create/GeneratedCode
+            return f'{self._sanitize_filename(package)}-{self._sanitize_filename(component)}.md'
+        elif page_type == 'package_docs' and package:
+            # Handle package overview pages like create/, themes/
+            return f'{self._sanitize_filename(package)}-overview.md'
         else:
             # Fallback to sanitized title
             return f'{self._sanitize_filename(title)}.md'
