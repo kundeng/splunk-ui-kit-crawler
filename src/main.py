@@ -34,8 +34,8 @@ async def main() -> None:
     
     # Configure the Playwright crawler
     crawler = PlaywrightCrawler(
-        # Only crawl CardLayout page for testing
-        max_requests_per_crawl=1,
+        # Test multiple pages with generic approach
+        max_requests_per_crawl=5,
         
         # Back to headless mode for production
         headless=True,
@@ -56,24 +56,24 @@ async def main() -> None:
         # Small viewport to save memory
         browser_new_context_options={
             "viewport": {"width": 1024, "height": 768}
-        },
+        }
     )
     
-    # Store the exporter for later use
-    # Note: We'll process the dataset after crawling to generate markdown
-    
-    # Starting URLs - test CardLayout only for debugging
-    start_urls = [
-        'https://splunkui.splunk.com/Packages/react-ui/CardLayout',
+    # Add seed URLs - test different component pages
+    seed_urls = [
+        'https://splunkui.splunk.com/Packages/react-ui/Button',
+        'https://splunkui.splunk.com/Packages/react-ui/Card', 
+        'https://splunkui.splunk.com/Packages/react-ui/Table',
+        'https://splunkui.splunk.com/Packages/react-ui/Modal',
+        'https://splunkui.splunk.com/Packages/react-ui/Switch',
     ]
     
-    logger.info(f"Starting crawl with {len(start_urls)} seed URLs")
+    logger.info(f"Starting crawl with {len(seed_urls)} seed URLs")
     logger.info(f"Output directory: {docs_dir}")
     
     try:
         # Run the crawler
-        await crawler.run(start_urls)
-        
+        await crawler.run(seed_urls)
         logger.info(f"Crawl completed successfully!")
         
         # Show export stats (files were exported during crawling)
