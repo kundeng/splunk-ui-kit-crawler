@@ -163,6 +163,9 @@ cython_debug/
 storage/
 src/storage/
 
+# Generated documentation output
+docs/
+
 # Debug files
 debug_*.py
 /tmp/debug_*
