@@ -144,8 +144,8 @@ This document contains comprehensive documentation for the Splunk UI Kit, organi
 
 def main():
     """Main execution function."""
-    docs_dir = Path('docs')
-    output_path = Path('splunk-ui-kit-complete-docs.md')
+    docs_dir = Path('../docs')
+    output_path = Path('../splunk-ui-kit-complete-docs.md')
     
     if not docs_dir.exists():
         print(f"Error: {docs_dir} directory not found")
